@@ -1,0 +1,28 @@
+[gcode_macro SIMPLE_TIP]
+description: Try to create nice tips with minimal settings
+gcode:
+  {% set orig_temp = printer.extruder.target %}
+  {% set next_temp = params.NEXT_TEMP|default(orig_temp)|int %}
+  SAVE_GCODE_STATE NAME=pre_simple_tip
+  M109 S145
+  G91 # Relative positioning
+  M83 # Relative extrusion
+  G92 E0                           ; zero the extruder
+  G1 E-15.0 F4000                   ; retract
+  G1 E-25.0 F1800                   ; retract
+  G4 P3000
+  G1 E36.5 F1800                   ; retract
+  G1 E-37.0 F3600                   ; retract
+  #G1 E-5.0 F1800                   ; retract
+  SET_HEATER_TEMPERATURE HEATER=extruder TARGET={next_temp}
+  
+  
+  #EJECT_FILAMENT
+  G90 # Relative positioning
+  RESTORE_GCODE_STATE NAME=pre_simple_tip
+
+[gcode_macro EJECT_FILAMENT]
+description: Eject filament from extruder
+gcode:
+  G92 E0
+  G1 E-80 F{10*60} ; 25mm/s eject
