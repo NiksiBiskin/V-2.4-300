@@ -1,59 +1,51 @@
 {
     "Turtle_1": {
         "leg1": {
-            "spool_id": "1",
-            "material": "ASA",
-            "color": "#060503",
-            "weight": 786.7994233092094,
+            "spool_id": "",
+            "material": "",
+            "color": "#000000",
+            "weight": 0,
             "runout_lane": "NONE",
             "map": "T0",
             "index": 1,
-            "tool_loaded": true,
-            "hub_loaded": true,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
-            "status": "Tooled"
+            "tool_loaded": false,
+            "hub_loaded": false,
+            "status": ""
         },
         "leg2": {
-            "spool_id": "3",
-            "material": "ASA",
-            "color": "#FA0606",
-            "weight": 872.4538345478986,
+            "spool_id": "",
+            "material": "",
+            "color": "#000000",
+            "weight": 0,
             "runout_lane": "NONE",
             "map": "T1",
             "index": 2,
             "tool_loaded": false,
-            "hub_loaded": true,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
-            "status": null
+            "hub_loaded": false,
+            "status": ""
         },
         "leg3": {
-            "spool_id": "4",
-            "material": "ASA",
-            "color": "#FA6106",
-            "weight": 988.5256105757079,
+            "spool_id": "",
+            "material": "",
+            "color": "#000000",
+            "weight": 0,
             "runout_lane": "NONE",
             "map": "T2",
             "index": 3,
             "tool_loaded": false,
-            "hub_loaded": true,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
-            "status": null
+            "hub_loaded": false,
+            "status": ""
         },
         "leg4": {
             "spool_id": "",
             "material": "",
-            "color": "",
-            "weight": "",
+            "color": "#000000",
+            "weight": 0,
             "runout_lane": "NONE",
             "map": "T3",
             "index": 4,
             "tool_loaded": false,
             "hub_loaded": false,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
             "status": ""
         }
     }
